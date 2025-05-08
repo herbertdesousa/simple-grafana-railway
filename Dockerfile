@@ -1,6 +1,6 @@
 FROM grafana/grafana:latest
 
-VOLUME ["/grafana-storage"]
+RUN mkdir -p /grafana-storage
 
 WORKDIR /grafana-storage
 
