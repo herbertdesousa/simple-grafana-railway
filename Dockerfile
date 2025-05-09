@@ -1,8 +1,8 @@
 FROM grafana/grafana:latest
 
-RUN mkdir -p /grafana-storage
+COPY grafana-storage /var/lib/grafana
 
-WORKDIR /grafana-storage
+WORKDIR /
 
 EXPOSE 3000
 
